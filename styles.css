@@ -8,6 +8,16 @@ body {
     text-align: center;
   }
   
+  #quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
   #question {
     font-size: 20px;
     margin-bottom: 20px;
@@ -47,6 +57,7 @@ body {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 5px;
   }
   
   #next-button:hover {
@@ -82,7 +93,11 @@ body {
   }
   
   /* Mobile responsiveness */
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
+    #quiz-container {
+      padding: 10px;
+    }
+  
     #question {
       font-size: 18px;
     }
@@ -97,10 +112,12 @@ body {
   
     #next-button {
       font-size: 14px;
+      padding: 8px 16px;
     }
   
     #toast {
       font-size: 14px;
+      bottom: 10px;
     }
   }
   
